@@ -1,0 +1,13 @@
+{% block slug_row %}
+  <div class="mb-3" {{ stimulus_controller('upskaling--slugify') }}>
+    {{ form_label(form) }}
+    <div class="input-group">
+      {{ form_widget(form) }}
+      <div class="input-group-text">
+        <span class="fa-solid fa-lock" {{ stimulus_action('click->upskaling--slugify', 'lock') }} {{ stimulus_target('upskaling--slugify', 'lock') }}></span>
+      </div>
+    </div>
+    {{ form_help(form) }}
+    {{ form_errors(form) }}
+  </div>
+{% endblock %}

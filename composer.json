@@ -1,0 +1,31 @@
+{
+    "name": "upskaling/slugify",
+    "description": "slug type",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": [
+        "symfony-ux"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Upskaling\\SlugifyBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "upskaling",
+            "email": "16085882+upskaling@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "symfony/form": "^6.1",
+        "symfony/twig-bundle": "^6.1",
+        "symfony/webpack-encore-bundle": "^1.15",
+        "symfony/flex": "^2.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true
+        }
+    }
+}
